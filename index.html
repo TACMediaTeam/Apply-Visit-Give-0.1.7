@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" data-page="index">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apply · Visit · Give · Thomas Aquinas College</title>
+  <meta name="description" content="Apply to Thomas Aquinas College or the High School Summer Program, plan a visit to either campus, or give to support the education.">
+  <meta name="theme-color" content="#0c0b0a">
+  <link rel="icon" href="assets/logo/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/ne-students-brick-hall.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script>try { if (sessionStorage.getItem('slideBack')) { sessionStorage.removeItem('slideBack'); document.documentElement.classList.add('slide-in-back'); addEventListener('animationend', e => { if (e.target === document.body) document.documentElement.classList.remove('slide-in-back'); }); } } catch (_) {}</script>
+</head>
+<body>
+
+<a class="skip" href="#apply">Skip to content</a>
+
+<!-- ============ STICKY BAR (appears after the chooser) ============ -->
+<header class="bar" id="bar" aria-label="Sections">
+  <a class="bar-brand" href="https://www.thomasaquinas.edu" aria-label="Thomas Aquinas College home">
+    <img src="assets/logo/wordmark.webp" alt="Thomas Aquinas College" width="1000" height="563">
+  </a>
+  <nav class="bar-nav">
+    <a href="#apply" data-nav="apply">Apply</a>
+    <a href="#visit" data-nav="visit">Visit</a>
+    <a href="#give" data-nav="give">Give</a>
+  </nav>
+</header>
+
+<!-- ============ I. THE CHOOSER ============ -->
+<section class="chooser" id="top" aria-labelledby="chooser-title">
+  <div class="chooser-head">
+    <a class="chooser-home" href="https://www.thomasaquinas.edu" aria-label="Thomas Aquinas College home"><img class="chooser-mark" src="assets/logo/wordmark.webp" alt="Thomas Aquinas College" width="1000" height="563"></a>
+    <h1 id="chooser-title" class="sr-only">Apply, visit, or give to Thomas Aquinas College</h1>
+  </div>
+
+  <nav class="doors" aria-label="Choose: apply, visit, or give">
+    <a class="door" href="#apply" data-go="apply">
+      <img src="assets/img/ne-students-brick-hall.jpg" alt="" style="object-position: 40% 50%">
+      <span class="door-body">
+        <span class="door-n">I</span>
+        <span class="door-title">Apply</span>
+        <span class="door-line">To the College or to the High School Summer Program.</span>
+        <span class="door-go">Start here <i aria-hidden="true">↓</i></span>
+      </span>
+    </a>
+    <a class="door" href="#visit" data-go="visit">
+      <img src="assets/img/ca-quad-balustrade.jpg" alt="" style="object-position: 50% 50%">
+      <span class="door-body">
+        <span class="door-n">II</span>
+        <span class="door-title">Visit</span>
+        <span class="door-line">Join a class, share a meal, see TAC for yourself.</span>
+        <span class="door-go">Plan a visit <i aria-hidden="true">↓</i></span>
+      </span>
+    </a>
+    <a class="door" href="#give" data-go="give">
+      <img src="assets/img/ne-tower-lawn.jpg" alt="" style="object-position: 38% 50%">
+      <span class="door-body">
+        <span class="door-n">III</span>
+        <span class="door-title">Give</span>
+        <span class="door-line">Keep this education within reach of every student.</span>
+        <span class="door-go">Make a gift <i aria-hidden="true">↓</i></span>
+      </span>
+    </a>
+  </nav>
+</section>
+
+<main>
+
+<!-- =========================================================
+     I. APPLY
+     ========================================================= -->
+<section class="section" id="apply" aria-labelledby="apply-title">
+  <!-- the fork: which applicant are you? -->
+  <header class="fork-head reveal">
+    <p class="label">Start here</p>
+    <h3>Which describes <em>you?</em></h3>
+    <p class="fork-hint">Choose one to see what’s next.</p>
+  </header>
+  <div class="fork reveal" role="tablist" aria-label="Which program are you applying to?">
+    <button class="fork-opt" role="tab" id="tab-college" aria-controls="apply-college" aria-selected="false" aria-expanded="false" data-track="college">
+      <span class="label">I’m applying to college</span>
+      <strong>Prospective Students</strong>
+      <span class="fork-sub">Four years. Two campuses. One curriculum.</span>
+      <i class="fork-chev" aria-hidden="true">↓</i>
+    </button>
+    <button class="fork-opt" role="tab" id="tab-summer" aria-controls="apply-summer" aria-selected="false" aria-expanded="false" data-track="summer">
+      <span class="label">I’m a high school junior</span>
+      <strong>High School Summer Program</strong>
+      <span class="fork-sub">Live the life of a TAC student this summer.</span>
+      <i class="fork-chev" aria-hidden="true">↓</i>
+    </button>
+  </div>
+
+  <!-- ---- College track ---- -->
+  <div class="track" id="apply-college" role="tabpanel" aria-labelledby="tab-college" inert>
+  <div class="track-inner">
+    <ol class="reasons">
+      <li class="reveal"><span class="n">01</span><h3>The books <em>themselves.</em></h3><p>Read the original works of Homer, Euclid, Augustine, and Newton — not summaries.</p></li>
+      <li class="reveal"><span class="n">02</span><h3>A real <em>conversation.</em></h3><p>Small classes led by tutors who ask questions, so you learn <em>how</em> to think, not <em>what</em> to think.</p></li>
+      <li class="reveal"><span class="n">03</span><h3>Faith at <em>the center.</em></h3><p>Daily Mass, beautiful chapels, and a community that takes both reason and faith seriously.</p></li>
+    </ol>
+
+    <figure class="video reveal">
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/z_0h_mgz4IE?si=OpR_Ee_Hho1Y0RcT" title="Thomas Aquinas College" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </figure>
+
+    <div class="proof reveal">
+      <figure class="proof-media"><img loading="lazy" src="assets/img/ne-seminar-table.jpg" alt="Students and a tutor around a long seminar table in a sunlit classroom"></figure>
+      <blockquote class="proof-quote">
+        <p>“It’s small enough that you can be friends with everyone and you can become close in a way that you can’t at a bigger college. You find a lot of very close friendships.”</p>
+        <cite class="label">Nicolas Metilly, Class of 2029</cite>
+      </blockquote>
+    </div>
+
+    <div class="steps-wrap">
+      <h3 class="steps-title reveal">Applying is <em>simple.</em></h3>
+      <ol class="steps">
+        <li class="reveal"><span>i.</span><strong>Start your application</strong><p>Tell us about yourself — it takes a few minutes to begin.</p></li>
+        <li class="reveal"><span>ii.</span><strong>Write your essays</strong><p>We want to know how you think, not just what you’ve done.</p></li>
+        <li class="reveal"><span>iii.</span><strong>Hear from us</strong><p>An admissions counselor walks with you through every step, including financial aid.</p></li>
+      </ol>
+    </div>
+
+    <div class="apply-cta reveal" id="form-college">
+      <p class="label">Your seat is waiting</p>
+      <a class="btn-apply" href="https://admissions.thomasaquinas.edu/apply/">Apply Now! <span aria-hidden="true">→</span></a>
+      <p class="apply-note">Takes just a few minutes to begin.</p>
+    </div>
+  </div>
+  </div>
+
+  <!-- ---- Summer program track ---- -->
+  <div class="track" id="apply-summer" role="tabpanel" aria-labelledby="tab-summer" inert>
+  <div class="track-inner">
+    <div class="summer-head reveal">
+      <img class="hssp-logo" src="assets/logo/hssp-logo-parchment.webp" alt="High School Great Books Programs · Thomas Aquinas College" width="2000" height="888" loading="lazy">
+      <div>
+        <h3>A summer <em>like no other.</em></h3>
+        <p>Read great books, join real classes, pray in the chapel, and make friends who think deeply — before you ever choose a college.</p>
+      </div>
+    </div>
+
+    <ol class="reasons">
+      <li class="reveal"><span class="n">01</span><h3>Experience the <em>real thing.</em></h3><p>Read and discuss the same authors TAC students do, in classes led by college tutors.</p></li>
+      <li class="reveal"><span class="n">02</span><h3>Explore <em>campus.</em></h3><p>Live in our residence halls, attend daily Mass, share meals and evenings filled with conversation.</p></li>
+      <li class="reveal"><span class="n">03</span><h3>Leave <em>changed.</em></h3><p>Go home with friendships, sharper thinking, and a clear sense of what college could be.</p></li>
+    </ol>
+
+    <figure class="video reveal">
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/XkHhFwupEqw?si=1sd3pKo7rrJoxeaD" title="High School Summer Program at Thomas Aquinas College" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </figure>
+
+    <div class="proof proof-reverse reveal">
+      <figure class="proof-media"><img loading="lazy" src="assets/img/ca-hssp-outdoor-mass.jpg" alt="A priest elevates the chalice at an outdoor Mass in the California foothills as high school students kneel in the foreground" style="object-position: 50% 50%"></figure>
+      <blockquote class="proof-quote">
+        <p>“The Summer Program changed my life. It made me realize the way I thought about things was wrong, and showed me a better way to seek the truth.”</p>
+        <cite class="label">Vitor Satcheki, Class of 2028 &nbsp;·&nbsp; Summer Program alumnus</cite>
+      </blockquote>
+    </div>
+
+    <dl class="facts reveal">
+      <div><dt class="label">Who</dt><dd>Rising high school seniors</dd><p class="facts-note">Applying now? You’re a junior this year.</p></div>
+      <div><dt class="label">When · Summer 2027</dt><dd>California<br>July 5–18 · July 25–Aug 1</dd><dd>New England<br>July 11–24 · Aug 1–8</dd></div>
+      <div><dt class="label">Where</dt><dd>Santa Paula, California</dd><dd>Northfield, Massachusetts</dd></div>
+      <div><dt class="label">Tuition &amp; deadline</dt><dd>$600 one week<br>$975 two weeks</dd><p class="facts-note">Rolling admissions. The first 30 accepted to each program save $200–$400.</p></div>
+    </dl>
+
+    <div class="apply-cta apply-cta-solo reveal" id="form-summer">
+      <p class="label">Your summer starts here</p>
+      <a class="btn-apply" href="https://www.thomasaquinas.edu/admissions/summerprograms">Apply Now! <span aria-hidden="true">→</span></a>
+      <p class="apply-note">High School Summer Program</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="intro">
+    <div class="intro-media-col reveal">
+      <figure class="intro-media">
+        <img loading="lazy" src="assets/img/ne-seminar-tutor.jpg" alt="Students and a tutor in discussion around a long wooden seminar table, books open before them">
+      </figure>
+      <a class="btn-more btn-seminar" href="seminar.html" data-slide>The Seminar Method <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="intro-text reveal">
+      <p class="mark"><span class="roman">I</span><span class="label">Apply</span></p>
+      <h2 id="apply-title">Take your seat <em>at the table.</em></h2>
+      <p class="lede">Only the greatest books ever written, and a table of friends working together to understand them.</p>
+      <a class="btn-solid intro-apply" href="https://admissions.thomasaquinas.edu/apply/">Apply</a>
+      <p class="aid-note">A financial aid program costing nearly $6 million a year makes attending affordable for nearly 70 percent of students.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- =========================================================
+     II. VISIT
+     ========================================================= -->
+<div class="band light">
+<section class="section" id="visit" aria-labelledby="visit-title">
+  <div class="intro intro-reverse">
+    <figure class="intro-media reveal">
+      <img loading="lazy" src="assets/img/ne-hall-steps-wide.jpg" alt="Students climbing the stone steps into a red-brick hall on the New England campus">
+    </figure>
+    <div class="intro-text reveal">
+      <p class="mark"><span class="roman">II</span><span class="label">Visit</span></p>
+      <h2 id="visit-title">Come and see <em>for yourself.</em></h2>
+      <p class="lede">Something about this place doesn’t fit in a brochure. Spend a day with us and you’ll understand.</p>
+    </div>
+  </div>
+
+  <ol class="day reveal" aria-label="What a visit includes">
+    <li><span class="n">I</span><h3>Sit in on a class</h3><p>Join a real discussion — no lecture, all conversation.</p></li>
+    <li><span class="n">II</span><h3>Share a meal</h3><p>Eat with students and hear what it’s really like.</p></li>
+    <li><span class="n">III</span><h3>Pray with us</h3><p>Join the community for daily Mass in the Chapel.</p></li>
+    <li><span class="n">IV</span><h3>Meet Admissions</h3><p>Ask anything — curriculum, aid, campus life.</p></li>
+  </ol>
+
+  <h3 class="pick-title reveal">Choose <em>your campus.</em></h3>
+  <div class="campuses">
+    <article class="campus reveal">
+      <figure><img loading="lazy" src="assets/img/ne-hero-arcade.jpg" alt="A stone arcade framing green lawns and a chapel tower on the New England campus"></figure>
+      <p class="label">Northfield, Massachusetts</p>
+      <h4>New England</h4>
+      <p>Red brick and fieldstone in the hills above the Connecticut River.</p>
+    </article>
+    <article class="campus reveal">
+      <figure><img loading="lazy" src="assets/img/ca-quad-balustrade.jpg" alt="The chapel and academic quadrangle of the California campus, seen across a stone balustrade beneath breaking clouds"></figure>
+      <p class="label">Santa Paula, California</p>
+      <h4>California</h4>
+      <p>White stone and red tile in the foothills above the Santa Clara River Valley.</p>
+    </article>
+  </div>
+
+  <div class="apply-cta apply-cta-solo apply-cta-light reveal" id="form-visit">
+    <p class="label">Come and see for yourself</p>
+    <a class="btn-apply" href="https://www.thomasaquinas.edu/visit">Plan Your Visit <span aria-hidden="true">→</span></a>
+    <p class="apply-note">New England or California — we’d love to host you.</p>
+  </div>
+</section>
+</div>
+
+<!-- =========================================================
+     III. GIVE
+     ========================================================= -->
+<section class="section" id="give" aria-labelledby="give-title">
+  <div class="intro">
+    <figure class="intro-media reveal">
+      <img src="assets/img/ne-mass-through-arches.jpg" alt="Students at Mass, seen through the dark wooden arches of the chapel">
+    </figure>
+    <div class="intro-text reveal">
+      <p class="mark"><span class="roman">III</span><span class="label">Give</span></p>
+      <h2 id="give-title">Keep the conversation <em>going.</em></h2>
+      <p class="lede">Your gift puts a student at the seminar table who could not otherwise be there — and makes this faithful education available for the next generation.</p>
+    </div>
+  </div>
+
+  <div class="give-grid give-grid-solo">
+    <div class="give-card reveal" id="give-widget">
+      <img class="give-seal" src="assets/logo/seal.webp" alt="" aria-hidden="true" loading="lazy">
+      <p class="label">Give online</p>
+      <h3>Make your gift <em>today.</em></h3>
+      <p>Every gift, of any size, helps a student take a seat at the table.</p>
+      <ul class="give-facts" aria-label="Why your gift matters">
+        <li>No large endowment</li><li>No government money</li><li>No Church subsidies</li>
+      </ul>
+      <!-- Blackbaud Online Giving: every donate button needs this attribute -->
+      <button class="btn-donate" type="button" data-blackbaud-optimized-form-id="052db265-f27c-4167-a5ba-c83dec794771">Donate <span aria-hidden="true">→</span></button>
+      <p class="give-secure">Secure giving through Blackbaud</p>
+    </div>
+  </div>
+
+  <a class="btn-more reveal" href="https://www.thomasaquinas.edu/giving">More ways to give <span aria-hidden="true">→</span></a>
+
+  <figure class="give-quote reveal">
+    <img src="assets/img/ca-chapel-pews-light.jpg" alt="Students praying in the pews of the chapel as a shaft of light falls past the baldachin">
+    <blockquote>
+      <p>“The important thing is that we find ways to make a quality, Catholic education available to those who seek it.”</p>
+      <cite class="label">Rev. Cornelius M. Buckley, S.J. &nbsp;·&nbsp; College Chaplain</cite>
+    </blockquote>
+    <button class="btn-donate btn-donate-sm" type="button" data-blackbaud-optimized-form-id="052db265-f27c-4167-a5ba-c83dec794771">Make a Gift <span aria-hidden="true">→</span></button>
+  </figure>
+</section>
+
+</main>
+
+<footer class="footer">
+  <nav class="footer-nav" aria-label="Footer">
+    <a href="#apply">Apply</a><a href="#visit">Visit</a><a href="#give">Give</a>
+  </nav>
+  <p class="footer-contact"><a href="mailto:admissions@thomasaquinas.edu">admissions@thomasaquinas.edu</a> &nbsp;·&nbsp; <a href="https://thomasaquinas.edu" target="_blank" rel="noopener">thomasaquinas.edu</a></p>
+  <p class="motto"><em>Fides quaerens intellectum</em> &nbsp;·&nbsp; Faith seeking understanding</p>
+</footer>
+
+<figure class="closing-banner">
+  <img src="assets/img/tac-banner.jpg" alt="The Thomas Aquinas College seal and wordmark over a stone tower framed by trees" width="2000" height="1000" loading="lazy">
+</figure>
+
+<script src="main.js"></script>
+<!-- Blackbaud Online Giving loader -->
+<script src="https://sky.blackbaudcdn.net/static/og-web-loader/1/main.js" data-envid="p-I9g25fCYuECEg8XCgJMl1A" data-zone="usa"></script>
+</body>
+</html>
